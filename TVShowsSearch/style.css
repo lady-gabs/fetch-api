@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-color: #424242;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+    background-color: #000;
+}
+#content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

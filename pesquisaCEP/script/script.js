@@ -7,7 +7,6 @@ function validateCep(cepUser) {
     else {
         return true;
     }
-    // regex para validade do cep
 }
 function getCep() {
     let cepUser = document.getElementById('cep').value;

@@ -1,0 +1,34 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f8f6c6;
+}
+#content, #cepForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#content {
+    margin: auto;
+    width: fit-content;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#submitButton {
+    margin: 10px;
+    box-shadow: 1px 1px 2px #878787;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background: #fae884;
+}
+#cep{
+	padding: 5px 5px;
+	background: #f8f8f8;
+    border-bottom: 1px solid #acacac;
+    border-top: none;
+    border-inline: none;
+	color: #000000;
+	border-radius: 5px 5px 0px 0px;
+}

@@ -6,7 +6,6 @@ function validateCep(cepUser:string) {
     } else {
         return true;
     }
-    // regex para validade do cep
 }
 
 function getCep() {
@@ -34,7 +33,7 @@ function getCep() {
 
 function cepData() {
     let data: any = getCep();
-    let result: HTMLElement | null = document.getElementById('resultSearch') as HTMLDivElement;
+    let result: HTMLElement = document.getElementById('resultSearch') as HTMLDivElement;
     result.innerHTML = '';
 
     data = JSON.parse(data);
