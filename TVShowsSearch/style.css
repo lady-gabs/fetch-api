@@ -1,14 +1,53 @@
 body {
     margin: 0;
-    background-color: #424242;
+    background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(27,27,27,1) 70%, rgba(57,57,57,1) 95%);
     color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header {
     background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
 }
 #content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#customInput {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.svg_icon {
+	fill: #3a3a3a;
+	width: 18px;
+	height: 18px;
+}
+#submitButton {
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 2px;
+}
+#tvShowInput{
+    color:#000;
+	padding: 5px;
+	background-color: #f8f8f8;
+    border: none;
+	color: #000000;
+	border-radius: 5px 0px 0px 5px;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+li {
+    padding-inline: 10px;
+}
+li p {
+    max-width: 150px;
 }
