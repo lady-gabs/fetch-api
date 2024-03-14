@@ -30,6 +30,9 @@ body {
     border: none;
     background: #fa9c84;
 }
+#pokemonName{
+    text-transform: capitalize;
+}
 #pokedexInput{
 	padding: 5px 5px;
 	background: #f8f8f8;
@@ -48,22 +51,22 @@ body {
 }
 
 @keyframes shake {
-0% {
-    transform: translateX(0) rotate(0);
-}
-20% {
-    transform: translateX(-10px) rotate(-20deg);
-}
-30% {
-    transform: translateX(10px) rotate(20deg);
-}
-50% {
-    transform: translateX(-10px) rotate(-10deg);
-}
-60% {
-    transform: translateX(10px) rotate(10deg);
-}
-100% {
-    transform: translateX(0) rotate(0);
-}
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    20% {
+        transform: translateX(-10px) rotate(-20deg);
+    }
+    30% {
+        transform: translateX(10px) rotate(20deg);
+    }
+    50% {
+        transform: translateX(-10px) rotate(-10deg);
+    }
+    60% {
+        transform: translateX(10px) rotate(10deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0);
+    }
 }
