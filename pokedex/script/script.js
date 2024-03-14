@@ -15,17 +15,18 @@ async function getPokemon() {
     catch (error) {
         alert(error);
     }
+    finally {
+        document.getElementById('pokedexInput').value = '';
+        document.getElementById('pokedexInput')?.focus();
+    }
 }
 async function pokedexData() {
     let data = await getPokemon();
     let result = document.getElementById('resultSearch');
     result.innerHTML = '';
     result.innerHTML = `
-    <p><b>Nome:</b> ${capitalizeFirstLetter(data.species.name)}</p>
+    <p id="pokemonName"><b>Nome:</b> ${data.species.name}</p>
     <p><b>Número Pokedex:</b> ${data.id}</p>
     <img width="200px" src="${data.sprites.other["official-artwork"].front_default}" alt="${data.species.name}">
     `;
-}
-function capitalizeFirstLetter(name) {
-    return name.charAt(0).toUpperCase() + name.substring(1);
 }
