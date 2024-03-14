@@ -51,5 +51,11 @@ async function tvShowData() {
     }
 }
 
+(document.getElementById("tvShowInput") as HTMLInputElement).addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.key === 'Enter') {
+        (document.getElementById("submitButton") as HTMLButtonElement).click();
+    }
+});
 // implementar modal ao clicar na serie com as infos: nome, rating(sistema de estrelinhas), descrição e imagem
 // ativar search com tecla 'enter'
