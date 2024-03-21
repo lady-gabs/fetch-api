@@ -52,14 +52,15 @@ async function tvShowData() {
         }
     }
 }
-// clicar na tecla enter e aparecer resultados da pesquisa
+// Click the enter key to show search results
 document.getElementById("tvShowInput").addEventListener("keyup", function (event) {
     event.preventDefault();
     if (event.key === 'Enter') {
         document.getElementById("submitButton").click();
     }
 });
-// implementar modal ao clicar na serie com as infos: nome, rating(sistema de estrelinhas), descrição e imagem
+/* modal implementation that when clicking on the series image displays the informations: name,
+rating (star score), series description and image */
 async function showModal(index) {
     let modalInfos = document.querySelector('.tvShowInfos');
     let modal = document.querySelector('.modal');
@@ -87,7 +88,6 @@ async function showModal(index) {
             <img id='image-${index}' width="200px" src="${data[index].show.image.medium}" alt="${data[index].show.name}">
             `;
         }
-        // colocar estrelinhas (rating.average pode vir null!!!)
         if (data[index].show.rating.average === null) {
             modalInfos.innerHTML += `
             <p>Rating unavailable.</p>
