@@ -1,5 +1,5 @@
 "use strict";
-function validateCep(cepUser) {
+function isValidCep(cepUser) {
     let regex = /^[0-9]{8}$/;
     if (isNaN(Number(cepUser)) || Number(cepUser) === 0 || !regex.test(cepUser)) {
         return false;
@@ -13,7 +13,7 @@ function getCep() {
     let url = 'https://api.postmon.com.br/v1/cep/' + cepUser;
     let request = new XMLHttpRequest();
     try {
-        if (!validateCep(cepUser)) {
+        if (!isValidCep(cepUser)) {
             throw new Error("CEP inválido.");
         }
         request.open("GET", url, false);

@@ -1,4 +1,4 @@
-function validateCep(cepUser:string) {
+function isValidCep(cepUser:string) {
     let regex: RegExp = /^[0-9]{8}$/;
     
     if (isNaN(Number(cepUser)) || Number(cepUser) === 0 || !regex.test(cepUser)) {
@@ -14,7 +14,7 @@ function getCep() {
     let request = new XMLHttpRequest();
     
     try {
-        if (!validateCep(cepUser)) {
+        if (!isValidCep(cepUser)) {
             throw new Error("CEP inválido.")
         }
 
